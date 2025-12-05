@@ -1,0 +1,78 @@
+ 
+ 
+Chinemerem Portfolio
+1. TECHNICAL CONTEXT
+●       Objective: Create a clean, modern, static portfolio website for a student.
+●       Technologies: HTML, CSS, JavaScript (if needed for interactivity).
+●       Primary Audiencefriends,Teacher and colleagues.
+2. GLOBAL STYLING & THEME
+●       Color Palette:
+○        Background Color:white;
+○        Text Color:black;
+○        Primary/Accent Color: light blue;
+○        Navbar Color:#007BF;
+●       Typography:
+○        Headings (H1, H2): 'Poppins', sans-serif
+○        Body Text:  Arial, Helvetica, sans-serif
+●       Layout: Responsive (works on desktop, tablet, and mobile). Use CSS Flexbox/Grid.
+3. SITE STRUCTURE (Navigation)
+ The website must have these four pages, accessible from a navigation bar on every page:
+●       index.html (Home)
+●       projects.html (My Work)
+●       about.html (About / Resume)
+●       contact.html (Contact)
+4. PAGE SPECIFICATIONS
+ 
+4.1. HOME PAGE (index.html)
+●       Page Title: "Home | Chinemerem page]"
+●       Hero Section Layout:
+○        Left Column:
+■       H1: "[My Webpage]"
+■       H2: "about myself"
+■       Paragraph: "[2-3 sentence bio. Example: 'I am a passionate high school student with skills in web design and Python. I enjoy building creative solutions and learning new technologies.']"
+■       Button: "View My Projects" (links to projects.html)
+○        Right Column:
+■       Insert: Professional headshot image (profile.jpg with alt="[chinemerem")
+4.2. PROJECTS PAGE (projects.html)
+●       Page Title: "My Work | [Chinemerem Projects]"
+●       Layout: CSS Grid with 2-3 columns on desktop.
+●       Project Card Components (Repeat for each project):
+○        Project Title: H3 - "[my webpage]"
+○        Project Image: [project-image.jpg] with alt="Screenshot of [Project Name]"
+○        Description: P - "[1-2 sentence description.
+○        Example: 'A responsive website built with HTML and CSS. Learned to structure layouts using Flexbox.']"
+○        Tech Tags: Span tags with classes: <span class="tech-tag">HTML</span> <span class="tech-tag">CSS</span>
+○         
+4.3. ABOUT/RESUME PAGE (about.html)
+●       Page Title: "About | [About Chinemerem]"
+●       Two-Column Layout:
+○        Left Column (Education):
+■       H2: "Education"
+■       H3: "[School Name]"
+■       P: "[Years Attended]"
+■       Ul: [List 1-2 achievements or relevant courses]
+○        Right Column (Skills):
+■       H2: "Skills"
+■       H3: "Web Development"
+■       Ul: [HTML, CSS, Wireframing]
+■       H3: "Programming"
+■       Ul: [Python]
+■       H3: "Design"
+■       Ul: [Canva]
+4.4. CONTACT PAGE (contact.html)
+●       Page Title: "Contact | [Chinemerem Contact ]"
+●       Layout: Centered form.
+●       Content:
+○        H1: "Always There"
+○        Form with fields:
+■       Input: name (type="text", placeholder="Your Name")
+■       Input: email (type="email", placeholder="Your Email")
+■       Text area: message (placeholder="Your Message")
+○        Contact Info below form:
+■       P: "Email: [princetec1990@gmail.com]"
+■       P: "GitHub: [ Github- chinemerem1990]"
+ 
+Final Prompt:
+This webpage should contain four pages linked to index.html, all webpages will have the same background color and color. The navbar will take a background color of #007BFF, and a text color of white with letter spacing of 6rem.  The remaining text should be aligned to the center with horizontal lines on both sides. In the project page it should have a screenshot of works that I have done with links to them for more views. In the contact page the link should be able to get to my email when the forms are filled.
+	
+
