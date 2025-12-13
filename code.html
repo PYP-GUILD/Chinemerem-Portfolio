@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Showcase | Chinemerem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="portfolio-head">
+                <a href="index.html">
+                    <img src="assets/logo/PRINCETEC.png" alt="Chinemerem Logo" class="navbar-logo">
+                    <p>Chinemerem Portfolio</p>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main class="code-section">
+        <h1 class="section-title">Code Showcase</h1>
+        <p class="code-intro">Here's a look at the HTML, CSS, and JavaScript code that powers my portfolio website. Each section is organized and well-commented for easy understanding.</p>
+
+        <!-- HTML Code -->
+        <div class="code-container">
+            <h2 class="code-title">HTML Structure</h2>
+            <p class="code-description">The foundation of the portfolio - semantic HTML5 markup with proper structure.</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Chinemerem Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="assets/css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="navbar"&gt;
+        &lt;div class="nav-container"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="projects.html"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;main class="hero-section"&gt;
+        &lt;div class="hero-content"&gt;
+            &lt;div class="hero-text"&gt;
+                &lt;h1&gt;Welcome to My Portfolio&lt;/h1&gt;
+                &lt;p&gt;I'm a passionate developer learning web technologies...&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+
+        <!-- CSS Code -->
+        <div class="code-container">
+            <h2 class="code-title">CSS Styling</h2>
+            <p class="code-description">Modern CSS3 with Flexbox, Grid, and responsive design patterns.</p>
+            <pre><code class="language-css">/* Global Styles */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --accent-color: lightblue;
+    --navbar-color: #007BFF;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--navbar-color);
+    padding: 1.5rem 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}</code></pre>
+        </div>
+
+        <!-- JavaScript Code -->
+        <div class="code-container">
+            <h2 class="code-title">JavaScript Functionality</h2>
+            <p class="code-description">Interactive features including form validation and smooth navigation.</p>
+            <pre><code class="language-javascript">// Form validation and submission
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+            
+            this.submit();
+        });
+    }
+});
+
+// Add active class to current navigation item
+function setActiveNav() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.navbar a');
+    
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
+setActiveNav();</code></pre>
+        </div>
+
+        <!-- Learning Notes -->
+        <div class="code-container learning-notes">
+            <h2 class="code-title">Key Learning Concepts</h2>
+            <ul class="learning-list">
+                <li><strong>Semantic HTML:</strong> Using proper HTML5 elements for better structure and accessibility</li>
+                <li><strong>CSS Flexbox:</strong> Creating flexible layouts that adapt to different screen sizes</li>
+                <li><strong>CSS Grid:</strong> Building complex multi-column layouts with ease</li>
+                <li><strong>Responsive Design:</strong> Mobile-first approach with media queries</li>
+                <li><strong>JavaScript DOM:</strong> Manipulating HTML elements dynamically</li>
+                <li><strong>Form Validation:</strong> Ensuring data integrity before submission</li>
+                <li><strong>Version Control:</strong> Using Git and GitHub for project management</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Me</h3>
+                <p><i class="fas fa-envelope"></i> princetec1990@gmail.com</p>
+                <br>
+                <p><i class="fas fa-phone"></i> +234-810-147-0799</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/chinemerem1990" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.tiktok.com/@chinemeremezenwa1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.instagram.com/chinemerem.75/?__pwa=1#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Chinemerem. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
